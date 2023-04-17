@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	</head>
+
+	<body>
+		<h1>Rasm</h1>
+		<p>Biz img tegi orqlai web brouzerda rasm qo'yamiz</p>
+
+		
+	</body>
+</html>
