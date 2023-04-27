@@ -1,0 +1,63 @@
+* {
+  margin: 10px auto;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h1 span {
+  color: red;
+}
+
+td > h2::first-letter {
+  color: red;
+}
+
+table {
+  width: 100px;
+  margin: 0 auto;
+}
+
+main > p {
+  text-align: center;
+}
+
+main > p::after {
+  content: " Vokalia and Consonantia";
+  color: blue;
+}
+
+td > p::first-letter {
+  color: red;
+  font-size: 24px;
+}
+
+p > span {
+  color: aqua;
+}
+
+article p:first-child {
+  color: red;
+}
+
+article p:first-child::first-line {
+  color: blue;
+}
+
+article p:last-child {
+  color: green;
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: green;
+}
