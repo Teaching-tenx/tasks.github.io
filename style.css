@@ -1,63 +1,109 @@
-* {
-  margin: 10px auto;
-}
-
-h1 {
-  color: blue;
-  text-align: center;
-}
-
-h1 span {
-  color: red;
-}
-
-td > h2::first-letter {
-  color: red;
-}
-
-table {
-  width: 100px;
+.container {
+  width: 1024px;
   margin: 0 auto;
 }
 
-main > p {
+h1 {
+  color: green;
   text-align: center;
 }
 
-main > p::after {
-  content: " Vokalia and Consonantia";
+h1::before {
+  content: "My ";
+  color: red;
+}
+
+h1::after {
+  content: " Website";
   color: blue;
 }
 
-td > p::first-letter {
+nav > table {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: red;
+}
+
+article p::first-line {
+  color: red;
+}
+
+article button {
+  color: white;
+  background: green;
+}
+
+article button:active {
+  background-color: blue;
+}
+
+main > table {
+  width: 100%;
+}
+
+.services {
+  width: 200px;
+  vertical-align: top;
+}
+
+.services ul li a {
+  color: red;
+}
+
+.services ul li a:hover {
+  color: gray;
+}
+
+.services ul li:first-child a {
+  color: blue;
+}
+
+.project img {
+  width: 500px;
+  height: 300px;
+}
+
+.project h3[title="project_1"] {
+  color: orange;
+  font-size: 24px;
+}
+
+.project h3[title="project_2"] {
+  color: blueviolet;
+  font-size: 24px;
+}
+
+.project h3[title="project_3"] {
+  color: chartreuse;
+  font-size: 24px;
+}
+
+.project td > p::first-letter {
   color: red;
   font-size: 24px;
 }
 
-p > span {
-  color: aqua;
+footer table {
+  width: 100%;
 }
 
-article p:first-child {
-  color: red;
-}
-
-article p:first-child::first-line {
-  color: blue;
-}
-
-article p:last-child {
+footer td > p::after {
+  content: " All rights reserved";
   color: green;
 }
-
-a {
-  color: red;
-}
-
-a:hover {
+footer td > p::first-letter {
   color: blue;
 }
 
-a:visited {
+footer a {
+  color: red;
+}
+
+footer a:hover {
   color: green;
 }
