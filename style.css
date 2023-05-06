@@ -1,109 +1,210 @@
-.container {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+  font-family: "Judson", serif;
+}
+
+header {
+  color: #fff;
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+  padding: 20px 0;
+  position: fixed;
+}
+
+nav table {
   width: 1024px;
   margin: 0 auto;
-}
-
-h1 {
-  color: green;
   text-align: center;
 }
 
-h1::before {
-  content: "My ";
-  color: red;
+nav table td a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
 }
 
-h1::after {
-  content: " Website";
-  color: blue;
+nav table td a:hover {
+  color: aqua;
+  border-top: 2px solid aqua;
+  border-bottom: 2px solid aqua;
 }
 
-nav > table {
-  width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20px;
-}
-
-nav a:hover {
-  color: red;
-}
-
-article p::first-line {
-  color: red;
-}
-
-article button {
-  color: white;
-  background: green;
-}
-
-article button:active {
-  background-color: blue;
-}
-
-main > table {
+.hero {
   width: 100%;
+  height: 100vh;
+  padding: 35vh 0;
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-family: "Quando", serif;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+.btn {
+  background-color: #f00;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
 }
 
 .services {
-  width: 200px;
-  vertical-align: top;
+  text-align: center;
 }
 
-.services ul li a {
-  color: red;
+.sectionTitle {
+  font-size: 36px;
+  text-align: center;
+
+  margin-bottom: 45px;
 }
 
-.services ul li a:hover {
-  color: gray;
+.service {
+  display: inline-block;
+  margin: 0 20px;
+  max-width: 300px;
 }
 
-.services ul li:first-child a {
-  color: blue;
+.service img {
+  width: 80px;
 }
 
-.project img {
-  width: 500px;
-  height: 300px;
-}
-
-.project h3[title="project_1"] {
-  color: orange;
+.service h3 {
   font-size: 24px;
+  font-family: "Quando", serif;
+  margin: 30px 0 15px;
 }
 
-.project h3[title="project_2"] {
-  color: blueviolet;
-  font-size: 24px;
+.service p {
+  font-size: 16px;
 }
 
-.project h3[title="project_3"] {
-  color: chartreuse;
-  font-size: 24px;
+.portfolio {
+  background-color: #eee;
 }
 
-.project td > p::first-letter {
-  color: red;
-  font-size: 24px;
-}
-
-footer table {
+.gallery {
   width: 100%;
+  height: 450px;
 }
 
-footer td > p::after {
-  content: " All rights reserved";
-  color: green;
-}
-footer td > p::first-letter {
-  color: blue;
-}
-
-footer a {
-  color: red;
+.gallery td {
+  width: 360px;
+  height: 280px;
+  padding: 20px;
+  border: 3px solid white;
 }
 
-footer a:hover {
-  color: green;
+.gallery td:hover {
+  border: 3px solid aqua;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact {
+  background-color: #eee;
+
+  padding: 50px 0;
+  text-align: center;
+}
+
+.map {
+  margin-bottom: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+form {
+  max-width: 600px;
+  background-color: #fff;
+  margin: 60px auto 0;
+
+  border: 3px solid white;
+  padding: 30px 45px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  font-size: 700;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  outline-color: aqua;
+}
+
+form input[type="submit"] {
+  background-color: #f00;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
