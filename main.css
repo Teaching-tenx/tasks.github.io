@@ -3,19 +3,6 @@ p {
   color: gray;
 }
 
-h3,
-p {
-  text-align: center;
-}
-
-.monstroid > p {
-  text-align: left;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
 
 .button {
   width: 150px;
